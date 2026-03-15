@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 # Load model
-model = tf.keras.models.load_model("model/cat_dog_model.keras")
+model = tf.keras.models.load_model("Model/cat_dog_model.keras")
 
 st.title("🐶 Cat vs Dog Image Classifier")
 
