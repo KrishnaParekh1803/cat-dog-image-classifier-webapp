@@ -6,9 +6,12 @@ from PIL import Image
 # Load model
 model = tf.keras.models.load_model("Model/cat_dog_model.keras")
 
-st.title("🐶 Cat vs Dog Image Classifier")
+st.markdown("<h1 style='text-align: center;'>🐶 Cat vs Dog Image Classifier</h1>", unsafe_allow_html=True)
 
-st.write("Upload an image and the AI will predict whether it is a cat or dog.")
+st.markdown(
+    "<p style='text-align: center;'>Upload an image and the AI will predict whether it is a cat or a dog.</p>",
+    unsafe_allow_html=True
+)
 
 uploaded_file = st.file_uploader("Upload Image", type=["jpg","png","jpeg"])
 
