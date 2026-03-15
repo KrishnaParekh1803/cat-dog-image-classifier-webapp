@@ -4,7 +4,12 @@ import numpy as np
 from PIL import Image
 
 # Load model
-model = tf.keras.models.load_model("Model/cat_dog_model.keras")
+@st.cache_resource
+def load_model():
+    model = tf.keras.models.load_model("Model/cat_dog_model.keras", compile=False)
+    return model
+
+model = load_model()
 
 st.markdown("<h1 style='text-align: center;'>🐶 Cat vs Dog Image Classifier</h1>", unsafe_allow_html=True)
 
