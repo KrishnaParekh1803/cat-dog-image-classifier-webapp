@@ -56,7 +56,7 @@ Cat\_vs\_Dog\_App
 
 1\. Clone the repository
 
-git clone https://github.com/YOUR\_USERNAME/cat-dog-image-classifier.git
+git clone https://github.com/KrishnaParekh1803/cat-dog-image-classifier-webapp.git
 
 
 
