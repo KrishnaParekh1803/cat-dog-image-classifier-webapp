@@ -41,5 +41,6 @@ if uploaded_file is not None:
 
     st.success(f"Prediction: {label}")
     st.write(f"Confidence: {confidence*100:.2f}%")
+    compile=False
 
 st.write("Developed by Krishna Parekh")
